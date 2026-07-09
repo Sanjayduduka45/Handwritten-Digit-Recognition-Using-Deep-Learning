@@ -1,84 +1,149 @@
-# Handwritten Digit Recognition Using Deep Learning
+<div align="center">
 
-A deep learning project that classifies handwritten digits (0–9) using the MNIST dataset. This project implements and compares three neural network architectures—**Perceptron**, **Artificial Neural Network (ANN)**, and **Convolutional Neural Network (CNN)**—to evaluate their performance on handwritten digit classification.
+# 🔢 Handwritten Digit Recognition Using Deep Learning
 
-> **Repository:**  
-> https://github.com/Sanjayduduka45/Handwritten-Digit-Recognition-Using-Deep-Learning
+### Perceptron • Artificial Neural Network (ANN) • Convolutional Neural Network (CNN)
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+
+</p>
+
+<p align="center">
+
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
+![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+
+</p>
 
 ---
 
-## Project Overview
+### 📊 CNN achieved **98.99% Test Accuracy** on the MNIST Handwritten Digit Dataset.
 
-This project demonstrates the complete workflow of image classification using neural networks, from data preprocessing to model evaluation. Three different architectures are trained on the same dataset and compared using accuracy, loss curves, confusion matrices, and sample predictions.
-
-The CNN model achieves the highest performance by effectively learning spatial features from handwritten digit images. CNNs are widely recognized as the standard approach for image classification tasks because of their ability to automatically extract hierarchical visual features. :contentReference[oaicite:0]{index=0}
+</div>
 
 ---
 
-## Repository Structure
+# 📖 Overview
+
+This project implements and compares three neural network architectures for handwritten digit recognition using the **MNIST** dataset.
+
+The objective is to analyze how model complexity affects image classification performance by training:
+
+- Perceptron
+- Artificial Neural Network (ANN)
+- Convolutional Neural Network (CNN)
+
+The project includes complete data preprocessing, model training, evaluation, visualization, and comparative analysis.
+
+---
+
+# ✨ Features
+
+- 📥 Data Loading & Inspection
+- 🧹 Data Preprocessing
+- 🔄 Data Normalization
+- 🏷️ One-Hot Encoding
+- 🧠 Perceptron Implementation
+- 🤖 ANN Implementation
+- 🖼️ CNN Implementation
+- 📈 Training & Validation Curves
+- 📊 Confusion Matrix
+- 🔍 Sample Predictions
+- 📉 Model Performance Comparison
+
+---
+
+# 🛠️ Tech Stack
+
+| Category | Technologies |
+|-----------|--------------|
+| Programming Language | ![Python](https://skillicons.dev/icons?i=python) Python |
+| Deep Learning | ![TensorFlow](https://skillicons.dev/icons?i=tensorflow) TensorFlow & Keras |
+| Machine Learning | Scikit-Learn |
+| Data Analysis | ![Pandas](https://skillicons.dev/icons?i=pandas) Pandas • ![NumPy](https://skillicons.dev/icons?i=numpy) NumPy |
+| Visualization | Matplotlib • Seaborn |
+| IDE | ![VS Code](https://skillicons.dev/icons?i=vscode) VS Code |
+| Notebook | ![Jupyter](https://skillicons.dev/icons?i=py) Jupyter Notebook |
+| Version Control | ![Git](https://skillicons.dev/icons?i=git) Git |
+| Repository | ![GitHub](https://skillicons.dev/icons?i=github) GitHub |
+
+---
+
+# 📂 Repository Structure
 
 ```
-Handwritten-Digit-Recognition-Using-Deep-Learning/
+Handwritten-Digit-Recognition-Using-Deep-Learning
 │
-├── .venv/
-│
-├── mnist_train_8_12_11PM.csv      # Training dataset
-├── mnist_test.csv                 # Testing dataset
-│
-├── number.ipynb                   # Complete project implementation
-│
-├── requirements.txt               # Required Python libraries
-│
-└── README.md
+├── number.ipynb
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
 
 ---
 
-## Dataset
+# 📊 Dataset
 
-**Dataset:** MNIST Handwritten Digit Dataset
+**MNIST Handwritten Digit Dataset**
 
 | Property | Value |
 |----------|-------|
-| Classes | 10 (Digits 0–9) |
-| Image Size | 28 × 28 pixels |
+| Classes | 10 |
+| Image Size | 28 × 28 |
 | Features | 784 |
 | Training Samples | 60,000 |
-| Test Samples | 10,000 |
-| Image Format | Grayscale |
+| Testing Samples | 10,000 |
 
 ---
 
-## Project Workflow
+# ⚙️ Workflow
 
-- Load MNIST dataset
-- Data inspection
-- Missing value check
-- Duplicate record check
-- Train-Test split
-- Data normalization
-- One-Hot Encoding
-- Model training
-- Model evaluation
-- Performance comparison
-- Visualization of results
+```text
+Load Dataset
+      │
+      ▼
+Data Inspection
+      │
+      ▼
+Preprocessing
+      │
+      ▼
+Normalization
+      │
+      ▼
+One-Hot Encoding
+      │
+      ▼
+Train Models
+      │
+      ▼
+Evaluation
+      │
+      ▼
+Performance Comparison
+```
 
 ---
 
-## Models Implemented
+# 🧠 Models
 
-### Perceptron
+## 1️⃣ Perceptron
 
-- Input Layer
-- Dense Output Layer
+- Dense Layer
 - Softmax Activation
 - SGD Optimizer
 
 ---
 
-### Artificial Neural Network (ANN)
-
-Architecture
+## 2️⃣ Artificial Neural Network (ANN)
 
 ```
 Input
@@ -100,16 +165,9 @@ Optimizer
 
 - Adam
 
-Activation
-
-- ReLU
-- Softmax
-
 ---
 
-### Convolutional Neural Network (CNN)
-
-Architecture
+## 3️⃣ Convolutional Neural Network (CNN)
 
 ```
 Input (28×28×1)
@@ -120,7 +178,7 @@ Conv2D (32)
 
 ↓
 
-MaxPooling2D
+MaxPooling
 
 ↓
 
@@ -128,7 +186,7 @@ Conv2D (64)
 
 ↓
 
-MaxPooling2D
+MaxPooling
 
 ↓
 
@@ -144,33 +202,22 @@ Dropout
 
 ↓
 
-Output (10)
+Softmax
 ```
 
-Optimizer
+---
 
-- Adam
+# 📈 Model Performance
 
-Activation
-
-- ReLU
-- Softmax
+| Model | Accuracy |
+|--------|----------|
+| 🟢 CNN | **98.99%** |
+| 🔴 Perceptron | **91.06%** |
+| 🟠 ANN | **76.29%** |
 
 ---
 
-## Results
-
-| Model | Test Accuracy |
-|--------|--------------:|
-| Perceptron | **91.06%** |
-| ANN | **76.29%** |
-| CNN | **98.99%** |
-
-CNN achieved the best classification performance among the implemented models.
-
----
-
-## Visualizations
+# 📊 Visualizations
 
 The notebook includes
 
@@ -178,28 +225,13 @@ The notebook includes
 - Validation Accuracy
 - Training Loss
 - Validation Loss
-- Validation Accuracy Comparison
+- Accuracy Comparison
 - Confusion Matrix
-- Final Accuracy Comparison
-- Sample Prediction Comparison
+- Sample Predictions
 
 ---
 
-## Technologies Used
-
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- TensorFlow
-- Keras
-- Jupyter Notebook
-
----
-
-## Installation
+# 🚀 Installation
 
 Clone the repository
 
@@ -207,7 +239,7 @@ Clone the repository
 git clone https://github.com/Sanjayduduka45/Handwritten-Digit-Recognition-Using-Deep-Learning.git
 ```
 
-Move to the project folder
+Move into the project
 
 ```bash
 cd Handwritten-Digit-Recognition-Using-Deep-Learning
@@ -219,7 +251,7 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Launch Jupyter Notebook
+Launch Jupyter
 
 ```bash
 jupyter notebook
@@ -235,64 +267,72 @@ Run all cells.
 
 ---
 
-## Requirements
+# 📦 Requirements
 
 ```
-tensorflow
-keras
 numpy
 pandas
 matplotlib
 seaborn
 scikit-learn
+tensorflow
 jupyter
+notebook
+ipykernel
 ```
 
 ---
 
-## Key Learning Outcomes
+# 📚 Learning Outcomes
 
-- Image preprocessing
-- Data normalization
-- One-Hot Encoding
-- Neural Networks
-- Deep Learning
+- Image Classification
+- Deep Learning Fundamentals
 - CNN Architecture
 - Model Evaluation
-- Confusion Matrix Analysis
-- Performance Comparison
-- Image Classification
+- Data Preprocessing
+- One-Hot Encoding
+- Performance Analysis
+- Confusion Matrix Interpretation
 
 ---
 
-## Future Improvements
+# 🔮 Future Improvements
 
-- Hyperparameter tuning
-- Early Stopping
+- Hyperparameter Tuning
 - Batch Normalization
+- Early Stopping
 - Data Augmentation
-- Model Checkpointing
-- Streamlit-based deployment
-- Real-time handwritten digit prediction
+- Streamlit Deployment
+- Real-Time Digit Recognition
 
 ---
 
-## Author
+# 👨‍💻 Author
 
-**Sanjay Duduka**
+## Sanjay Duduka
 
-**Machine Learning | Data Science | Python | Deep Learning**
+Machine Learning • Data Science • Python • Deep Learning
 
-**GitHub**
+<p>
 
-https://github.com/Sanjayduduka45
+<a href="https://github.com/Sanjayduduka45">
+<img src="https://skillicons.dev/icons?i=github" width="40"/>
+</a>
 
-**Repository**
+<a href="https://www.linkedin.com/in/sanjayduduka">
+<img src="https://skillicons.dev/icons?i=linkedin" width="40"/>
+</a>
 
-https://github.com/Sanjayduduka45/Handwritten-Digit-Recognition-Using-Deep-Learning
+</p>
+
+GitHub Repository:
+
+**https://github.com/Sanjayduduka45/Handwritten-Digit-Recognition-Using-Deep-Learning**
 
 ---
 
-## License
+<div align="center">
 
-This project is intended for educational and learning purposes.
+⭐ If you found this project useful, consider giving it a star!
+
+</div>
